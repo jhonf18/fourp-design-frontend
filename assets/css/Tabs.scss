@@ -1,0 +1,68 @@
+@import 'variables';
+
+.tabs-container {
+  width: 100%;
+}
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  & ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    li {
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-decoration: none;
+        padding: 0.7rem 1rem;
+        color: #fff;
+        transition: all .8s;
+
+        &:hover {
+          color: $gray-900;
+          background-color: #fafbff;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 926px){
+  .is-active {
+    background-color: #fff;
+  }
+  .tabs {
+    & ul {
+      background: linear-gradient(to right, #180225, #180225);
+    }
+  }
+}
+
+
+.tabs .is-active a {
+  color: $gray-900 !important;
+}
+
+
+
+@media(max-width: 925px) {
+  .tabs ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .is-active {
+    background-color: #000000e3;
+  }
+
+  .tabs {
+    & ul {
+      background: linear-gradient(to right,#000000, #1b1b1b);
+    }
+  }
+
+}

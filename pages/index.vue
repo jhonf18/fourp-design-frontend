@@ -1,29 +1,29 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        fourp-desing-frontend
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="Top">
+      <div class="TopBackground">
+        <div class="container">
+          <Menu></Menu>
+        </div>
+      <div class="TopBackgroundBlack">
+        <div class="ContentTop">
+          <h2 class="TopTitle">
+            ¡UNA MIRADA HACIA LO DIFERENTE!
+          </h2>
+          <div class="TopBody">
+            <p>Un buen diseñador ayuda a vender más, y nosotros somos expertos en diseñar.</p>
+            <p class="mt-3">¡NO ESPERES MÁS Y TRABAJEMOS JUNTOS!</p>
+          </div>
+          <div class="TopBotton">
+            <button class="BottonColor text-white font-bold py-2 px-4 rounded">
+              CONTACTANOS
+            </button>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -31,48 +31,50 @@
 export default {}
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
+<style scoped>
+
 .container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: auto;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.TopBackground {
+  background-image: linear-gradient(#BB49FF, #230137);
+  padding-bottom: 5px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.TopBackgroundBlack {
+  background-color: black;
+  padding: 20px;
+  margin-top: -65px;
+  width: 60%;
+  margin-bottom: 20px;
 }
 
-.links {
-  padding-top: 15px;
+.ContentTop {
+  margin-top: 65px;
+  padding: 2em 1.4em 5.5em  1.4em;
 }
+
+.TopTitle {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 2.85em;
+  line-height: 1.2em;
+}
+
+.TopBody {
+  margin-top: 2em;
+  color: white;
+  font-size: 1.2em;
+}
+
+.TopBotton {
+  margin-top: 2.5em;
+}
+
+.BottonColor {
+  background-image: linear-gradient(to right,#BB49FF, #230137);
+}
+
 </style>
